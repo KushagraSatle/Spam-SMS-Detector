@@ -5,6 +5,8 @@ from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
 import string
 
+nltk.download('punkt_tab')
+
 stemmer = SnowballStemmer(language='english')
 
 tfidf = pickle.load(open('vectorizer.pkl','rb'))
